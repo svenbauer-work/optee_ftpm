@@ -20,10 +20,10 @@ Applications](https://optee.readthedocs.io/en/latest/building/trusted_applicatio
 section in the [OP-TEE
 documentation](https://optee.readthedocs.io/en/latest/index.html) with the
 addition of `CFG_MS_TPM_20_REF` which must hold the path to a checked out
-copy of the [MS TPM 2.0 Reference
-Implementation](https://github.com/microsoft/ms-tpm-20-ref).
-You need to checkout commit (98b60a44aba79b15fcce1c0d1e46cf5918400f6a) of [MS TPM 2.0 Reference
-Implementation](https://github.com/microsoft/ms-tpm-20-ref)
+copy of the [The Official TPM 2.0 Reference
+Implementation](https://github.com/TrustedComputingGroup/TPM).
+For the time being and until The Official TPM 2.0 Reference Implementation accepts a corresponding pull request
+the following fixed version is required: https://github.com/svenbauer-work/TPM/tree/a9665960ddfb92b8a140cd8d37d29342ddb05b3b
 
 ## Measured Boot support
 The fTPM Trusted Application includes support for Measured Boot. This
