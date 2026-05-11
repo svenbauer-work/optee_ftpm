@@ -380,6 +380,12 @@ bool process_eventlog(const unsigned char *const buf, const size_t log_size)
          * Process the rest of the Event Log.
          */
         buf_index = process_event(buf_index, buf, log_size);
+        if (buf_index == 0) {
+#ifdef fTPMDebug
+            EMSG("Fail to process TPM event log at index %u.\n", buf_index);
+#endif
+            return false;
+        }
         event_count++;
     }
 
