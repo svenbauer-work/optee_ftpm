@@ -265,13 +265,13 @@ static unsigned int process_event(unsigned int buf_index,
 
         for (j = 0U; j < event_header_ptr->number_of_algorithms; j++) {
             if (SwapBytes16(alg_id) ==
-                    event_header_ptr->digest_size[i].algorithm_id) {
-                digest_size = event_header_ptr->digest_size[i].digest_size;
+                    event_header_ptr->digest_size[j].algorithm_id) {
+                digest_size = event_header_ptr->digest_size[j].digest_size;
                 break;
             }
         }
 
-        if (j > event_header_ptr->number_of_algorithms) {
+        if (j >= event_header_ptr->number_of_algorithms) {
 #ifdef fTPMDebug
             EMSG("Algorithm ID %i not found\n", alg_id);
 #endif
