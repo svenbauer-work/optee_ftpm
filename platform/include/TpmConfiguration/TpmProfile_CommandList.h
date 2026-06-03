@@ -80,7 +80,7 @@
 // While all of the TPM reference implementation is provided "AS IS" without any
 // warranty, the current design and implementation of CertifyX509 are considered
 // to be especially unsuitable for product use.
-#define CC_CertifyX509               CC_YES
+#define CC_CertifyX509               CC_NO
 
 // Normal commands:
 
