@@ -19,11 +19,9 @@ This TA is built as described in [Trusted
 Applications](https://optee.readthedocs.io/en/latest/building/trusted_applications.html)
 section in the [OP-TEE
 documentation](https://optee.readthedocs.io/en/latest/index.html) with the
-addition of `CFG_MS_TPM_20_REF` which must hold the path to a checked out
+addition of `CFG_MS_TPM_20_REF`, which must hold the path to a
 copy of the [The Official TPM 2.0 Reference
-Implementation](https://github.com/TrustedComputingGroup/TPM).
-For the time being and until The Official TPM 2.0 Reference Implementation accepts a corresponding pull request
-the following fixed version is required: https://github.com/svenbauer-work/TPM/tree/a9665960ddfb92b8a140cd8d37d29342ddb05b3b
+Implementation](https://github.com/TrustedComputingGroup/TPM) checked out at tag V184.
 
 ## Measured Boot support
 The fTPM Trusted Application includes support for Measured Boot. This
