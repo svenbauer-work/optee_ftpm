@@ -39,6 +39,7 @@ global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/tpm/include/private/prototyp
 global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/tpm/cryptolibs/common/include
 global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/Platform/include
 global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/TpmConfiguration
+global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/TpmConfiguration/TpmConfiguration
 global-incdirs_ext-y += $(CFG_MS_TPM_20_REF)/TPMCmd/tpm/cryptolibs/TpmBigNum/include/
 
 cflags-y += -fno-strict-aliasing
